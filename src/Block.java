@@ -16,7 +16,7 @@ public class Block {
         this.hash = calculateHash(); //Making sure we do this after we set other values
     }
 
-    //Method 1:
+    //Method 1: Applying SHA256 on thee combination of previousHash, timestamp, nonce and data
     public String calculateHash() {
         String calculatehash = StringUtil.applySha256(
             prevHash + Long.toString(timeStamp) + 
