@@ -20,6 +20,7 @@ public class Chain {
         Scanner sc = new Scanner(System.in);
 
         while(diff == -1){
+            System.out.print("Please enter the desired difficulty: ");
             diff = sc.nextInt();
         }
 
